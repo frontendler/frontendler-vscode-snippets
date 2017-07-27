@@ -3,7 +3,7 @@
     "displayName": "Frontendler Visual Code Snippets",
     "description": "Frontendler Snippets for Visual Code Editor",
     "repository": "https://github.com/frontendler/frontendler-vscode-snippets",
-    "version": "0.3.0",
+    "version": "0.3.1",
     "icon": "resources/logo.png",
     "publisher": "danielbeff",
     "author": "Daniel Beff <daniel.beff@gmail.com>",
