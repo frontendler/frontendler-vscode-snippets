@@ -1,7 +1,7 @@
 {
     "$animation-duration": {
         "prefix": "animation-duration",
-        "body": "$animation-duration",
+        "body": "$$animation-duration",
         "description": "Default value of animation-duration."
     },
     "animation-time-function": {
@@ -12,7 +12,7 @@
     "animation-time-functions": {
         "prefix": "animation-time-functions",
         "body": [
-            "$animation-time-functions: (",
+            "$$animation-time-functions: (",
             "\t\"in-out-quad\": cubic-bezier(0.455, 0.030, 0.515, 0.955),",
             "\t\"in-out-cubic\": cubic-bezier(0.645, 0.045, 0.355, 1.000),",
             "\t\"in-out-quart\": cubic-bezier(0.770, 0.000, 0.175, 1.000),",
@@ -23,5 +23,21 @@
             ");"
         ],
         "description": "Default value of $animation-time-functions."
+    },
+    "animation-keyframes": {
+        "prefix": "animation-keyframes",
+        "body": [
+            "$$animation-keyframes: (",
+            "\tfade-out",
+            "\tbounce-in-down",
+            "\tbounce-in-up",
+            "\trubber-band",
+            "\tzoom-in",
+            "\tslide-in-up",
+            "\tslide-in-down",
+            "\talert",
+            ");"
+        ],
+        "description": "Default value of $animations-keyframes."
     }
 }
