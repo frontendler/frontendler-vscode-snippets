@@ -1,16 +1,17 @@
 {
     "$animation-duration": {
         "prefix": "animation-duration",
-        "body": "$$animation-duration",
-        "description": "Default value of animation-duration."
+        "description": "Default value of animation-duration.",
+        "body": "$$animation-duration"
     },
     "animation-time-function": {
         "prefix": "animation-time-function",
-        "body": "animation-time-function(\"${1:name}\")",
-        "description": "Add animation-time-function value based on the $animation-time-functions list."
+        "description": "Add animation-time-function value based on the $animation-time-functions list.",
+        "body": "animation-time-function(\"${1:name}\")"
     },
     "animation-time-functions": {
         "prefix": "animation-time-functions",
+        "description": "Default value of $animation-time-functions.",
         "body": [
             "$$animation-time-functions: (",
             "\t\"in-out-quad\": cubic-bezier(0.455, 0.030, 0.515, 0.955),",
@@ -21,11 +22,11 @@
             "\t\"in-out-expo\": cubic-bezier(1.000, 0.000, 0.000, 1.000),",
             "\t\"in-out-circ\": cubic-bezier(0.785, 0.135, 0.150, 0.860),",
             ");"
-        ],
-        "description": "Default value of $animation-time-functions."
+        ]
     },
-    "animation-keyframes": {
+    "$animation-keyframes": {
         "prefix": "animation-keyframes",
+        "description": "Default value of $animations-keyframes.",
         "body": [
             "$$animation-keyframes: (",
             "\tfade-out",
@@ -37,7 +38,50 @@
             "\tslide-in-down",
             "\talert",
             ");"
-        ],
-        "description": "Default value of $animations-keyframes."
+        ]
+    },
+    "animations": {
+        "prefix": "animations",
+        "description": "Include all keyframes listed in $animations-keyframes list.",
+        "body": "@include animations;"
+    },
+    "color": {
+        "prefix": "color",
+        "description": "Add color value based on the name in $colors list.",
+        "body": "color(\"${1:color-name}\")"
+    },
+    "colors": {
+        "prefix": "colors",
+        "description": "Default value of $colors list.",
+        "body": [
+            "$$colors: (",
+            "\t\"ocean\":   #00a7ca",
+            "\t\"blue\":    #0075d3",
+            "\t\"purple\":  #8244a7",
+            "\t\"pink\":    #dd318a",
+            "\t\"green\":   #71be48",
+            "\t\"yellow\":  #f59d37",
+            "\t\"orange\":  #f75925",
+            "\t\"red\":     #dd202b",
+            "\t\"dark\":    #1c2731",
+            "\t\"gray\":    #606c78",
+            "\t\"silver\":  #939fac",
+            ");"
+        ]
+    },
+    "font-family": {
+        "prefix": "font-family",
+        "description": "Default value of font-family.",
+        "body": "$$font-family"
+    },
+    "$font-size": {
+        "prefix": "font-size",
+        "description": "Default value of font-size.",
+        "body": "$$font-size"
+    },
+    "font-size": {
+        "prefix": "font-size",
+        "description": "Add font-size value based on the name in $font-sizes list.",
+        "body": "font-size(\"${1:font-size-name}\")"
     }
 }
