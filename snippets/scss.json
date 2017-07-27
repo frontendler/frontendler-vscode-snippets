@@ -1,0 +1,27 @@
+{
+    "$animation-duration": {
+        "prefix": "animation-duration",
+        "body": "$animation-duration",
+        "description": "Default value of animation-duration."
+    },
+    "animation-time-function": {
+        "prefix": "animation-time-function",
+        "body": "animation-time-function(\"${1:name}\")",
+        "description": "Add animation-time-function value based on the $animation-time-functions list."
+    },
+    "animation-time-functions": {
+        "prefix": "animation-time-functions",
+        "body": [
+            "$animation-time-functions: (",
+            "\t\"in-out-quad\": cubic-bezier(0.455, 0.030, 0.515, 0.955),",
+            "\t\"in-out-cubic\": cubic-bezier(0.645, 0.045, 0.355, 1.000),",
+            "\t\"in-out-quart\": cubic-bezier(0.770, 0.000, 0.175, 1.000),",
+            "\t\"in-out-quint\": cubic-bezier(0.860, 0.000, 0.070, 1.000),",
+            "\t\"in-out-sine\": cubic-bezier(0.445, 0.050, 0.550, 0.950),",
+            "\t\"in-out-expo\": cubic-bezier(1.000, 0.000, 0.000, 1.000),",
+            "\t\"in-out-circ\": cubic-bezier(0.785, 0.135, 0.150, 0.860),",
+            ");"
+        ],
+        "description": "Default value of $animation-time-functions."
+    }
+}

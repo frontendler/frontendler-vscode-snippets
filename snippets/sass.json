@@ -1,0 +1,12 @@
+{
+    "$animation-duration": {
+        "prefix": "animation-duration",
+        "body": "$animation-duration",
+        "description": "Default value of animation-duration."
+    },
+    "animation-time-function": {
+        "prefix": "animation-time-function",
+        "body": "animation-time-function(\"${1:name}\")",
+        "description": "Add animation-time-function value based on the $animation-time-functions list."
+    }
+}

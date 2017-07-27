@@ -1,0 +1,32 @@
+{
+    "name": "frontendler-vscode-snippets",
+    "displayName": "Frontendler Visual Code Snippets",
+    "description": "Frontendler Snippets for Visual Code Editor",
+    "repository": "https://github.com/frontendler/frontendler-vscode-snippets",
+    "version": "0.1.0",
+    "icon": "resources/logo.png",
+    "publisher": "danielbeff",
+    "author": "Daniel Beff <daniel.beff@gmail.com>",
+    "license": "MIT",
+    "keywords": ["frontendler","sass", "scss", "snippet", "snippets"],
+    "galleryBanner": {
+        "color": "#1c2731",
+        "theme": "dark"
+    },
+    "engines": {
+        "vscode": "^1.5.0"
+    },
+    "categories": ["Snippets"],
+    "contributes": {
+        "snippets": [
+            {
+                "language": "scss",
+                "path": "./snippets/scss.json"
+            },
+            {
+                "language": "sass",
+                "path": "./snippets/sass.json"
+            }
+        ]
+    }
+}

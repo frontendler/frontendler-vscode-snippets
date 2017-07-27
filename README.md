@@ -1,2 +1,1 @@
-# frontendler-vscode-snippets
-Visual Code Editor snippets
+# react-redux-vscode-snippets
